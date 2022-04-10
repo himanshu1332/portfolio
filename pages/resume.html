@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1d5e5146a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {font-family: "Roboto", sans-serif;
+    line-height: 1.65;
+        line-height: 1.65;
+        color: #e1e1e1;
+        background: rgb(58, 56, 56);
+      }
+      .main-site {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        max-width: 1040px;
+        width: 90%;
+        margin: 0 auto;
+      }
+      .page-heading {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+        padding-bottom: 10px;
+      }
+      .page-heading h2 {
+        color: #00a3e1;
+        font-size: -webkit-xxx-large;
+    font-weight: bold;
+      }
+      .icon {margin-left:74%;
+        color: #00a3e1;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+
+      .education-section {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .subheading {
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .subheading h3 {
+        border-color: #00A3E1 !important;display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: .5px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+      }
+      .subheading h3:before,
+      .subheading h3:after {
+        position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    bottom:0;
+        background-color: #00a3e1;
+
+      }
+
+      .subheading h3::before{left:0;}
+      .subheading h3::after{right:0;}
+
+      ul.education {
+        margin: 20px 0 50px;
+        position: relative;
+        padding: 0 0 0 50px;
+        width: 100%;
+      }
+
+      ul.education li {
+        position: relative;
+        list-style: none;
+        margin-left: 10px;
+        padding: 20px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .education li .line-left {
+        width: 2px;
+        height: 100%;
+        background-color: #00a3e1 !important;
+        left: -10px;
+        top: 0;
+        position: absolute;
+      }
+      .line-left::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 2px solid #00a3e1;
+        position: absolute;
+        left: -4px;
+        top: -10px;
+      }
+      span {
+        display: inline-block;
+      }
+
+      .line-left::after {
+        border-radius: 50%;
+        border: 2px solid #e1e1e1;
+        position: absolute;
+        left: -4px;
+        content: "";
+        width: 10px;
+        height: 10px;
+        box-sizing: border-box;
+        top: 100%;
+      }
+      .content {
+        margin-left: 10px;
+      }
+
+      .content h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 26px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .content h5{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color:#00A3E1
+      }
+      p.info {
+        font-size: 16px;
+        margin-bottom: 0px;
+      }
+
+      span.year {
+        height: 100%;
+        left: -10px;
+        top: 0;
+        position: absolute;
+      }
+
+      span.to {
+        top: -18px;
+      }
+      span.from {
+        bottom: -18px;
+      }
+
+      span.year span {
+        transform: translateX(-120%);
+        font-size: 16px;
+        position: absolute;
+        color: #ffffff;
+      }
+
+      ul.education li:not(:first-child) {
+        margin-top: 60px;
+      }
+
+      .skill-section, .interest-section{    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+margin-bottom: 30px;}
+
+.skill-item{padding: 0 20px;}
+
+.progress-title{font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    text-transform: uppercase;}
+
+    .progress{    height: 10px;
+    background-color: #404144;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 20px;
+    overflow: visible;
+    display: flex;
+    line-height: 0;
+    font-size: 0.75rem;}
+
+    .progress-bar{    box-shadow: none;
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    transition: all 2s ease-out;
+
+    background-color: #00A3E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;}
+
+    .progress-value{font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: -30px;
+    right: 0;}
+
+    .progress-bar::after{content: "";
+    display: block;
+    border: 15px solid transparent;
+    border-bottom: 21px solid transparent;
+    position: absolute;
+    top: -26px;
+    right: -12px;
+
+    border-bottom-color: #0089bd;}
+
+    .html{width:91%}
+    .css{width:82%}
+    .js{width:52%}
+    .ms{width:80%}
+    .java{width:70%}
+
+    .interest-section{    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+margin-bottom: 30px;
+}
+
+.interest{
+margin-left: 36%; } 
+    
+    .interest-item{margin:auto;}
+    .row2{flex-wrap: unset;}
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <section class="main-site" id="resume">
+        <div class="main-section">
+          <div class="page-heading">
+            <h2>
+              Resume
+              <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
+            </h2>
+          </div>
+          <div class="row">
+            <!-- Education section Start -->
+
+            <div class="education-section">
+              <div class="subheading">
+                <h3>Education</h3>
+              </div>
+              <ul class="education">
+                <li>
+                  <span class="line-left"></span>
+                  <div class="content">
+                    <h4>BCA - Bachelor of Computer Application</h4>
+                    <h5>IP College Campus-2, Bulandshahr</h5>
+                    <p class="info">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestias, voluptatem.
+                    </p>
+                  </div>
+                  <span class="year">
+                    <span class="to">2022</span>
+                    <span class="from">2019</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="line-left"></span>
+                  <div class="content">
+                    <h4>Intermediate</h4>
+                    <h5>
+                      Khalsa Montessori Senior Secondary School, Bulandshahr
+                    </h5>
+                    <p class="info">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      A, in!
+                    </p>
+                  </div>
+                  <span class="year">
+                    <span class="to">2019</span>
+                    <span class="from">2017</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="line-left"></span>
+                  <div class="content">
+                    <h4>High School</h4>
+                    <h5>Saint Momina School, Bulandshahr</h5>
+                    <p class="info">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Pariatur, labore.
+                    </p>
+                  </div>
+                  <span class="year">
+                    <span class="to">2017</span>
+                    <span class="from">2007</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <!-- Education Section end -->
+          </div>
+          <div class="row row2">
+            <!-- Skill Section Start-->
+            <div class="skill-section">
+              <div class="subheading">
+                <h3>Coding Skill</h3>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Html</h4>
+                <div class="progress">
+                  <div class="progress-bar html" data-progress-value="91">
+                    <div class="progress-value">91%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">CSS</h4>
+                <div class="progress">
+                  <div class="progress-bar css" data-progress-value="82">
+                    <div class="progress-value">82%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">JavaScript</h4>
+                <div class="progress">
+                  <div class="progress-bar js" data-progress-value="94">
+                    <div class="progress-value">94%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">Core Java</h4>
+                <div class="progress">
+                  <div class="progress-bar java" data-progress-value="82">
+                    <div class="progress-value">82%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4 class="progress-title">MS-Office</h4>
+                <div class="progress">
+                  <div class="progress-bar ms" data-progress-value="82">
+                    <div class="progress-value">82%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Skill section ends -->
+            <!-- Interest Section Start -->
+            <div class="interest-section">
+              <div class="subheading">
+                <h3>Interests</h3>
+              </div>
+             <div class="interest"> 
+                 <div class="interest-item">
+                <h4>Trading Stocks</h4>
+              </div>
+              <div class="interest-item">
+                <h4>Travelling</h4>
+              </div>
+              <div class="interest-item">
+                <h4>Gaming</h4>
+              </div>
+              <div class="interest-item">
+                <h4>Photography</h4>
+              </div>
+            </div>
+        </div>
+        <!-- Interests section ends -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
