@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1d5e5146a9.js" crossorigin="anonymous"></script>
+    <style>
+
+      *{font-family: "Roboto", sans-serif;
+    line-height: 1.65;}
+        /* About */
+
+#about {
+  background: rgb(58, 56, 56);
+  width: 100%;
+  margin: auto 0;
+  overflow: hidden;
+  margin-left:0;
+  margin-top: -8px;
+}
+.about-section {
+  padding: 17%;
+  position: relative;
+  top: 0;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.page-heading {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 2rem;
+  height: 72px;
+}
+
+.page-heading icon fa fa-fw fa-user {
+  color: #00a3e1;
+  position: relative;
+}
+
+.page-heading icon fa fa-fw fa-user::before {
+  content: "\e82a";
+}
+
+.page-heading h2 {
+  color: #00a3e1;
+}
+
+.page-heading h2 span {
+  float: right;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 12rem;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+.about-info p,
+ul {
+  font-size: 1.5rem;
+}
+.profession {
+  font-size: 2.2rem;
+  color: whitesmoke;
+}
+.about-info ul li span.title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ffffff;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  padding-bottom: 1px;
+}
+
+.about-info ul li {
+  line-height: 1em;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+.about-info ul li span.title:after {
+  content: ":";
+  position: absolute;
+  right: -10px;
+}
+.about-info .sign {
+  width: 50%;
+}
+
+.about-info .sign img {
+  width: 35%;
+  height: auto;
+  filter: grayscale(500);
+}
+
+.about-info .resume-button {
+  margin-top: 30px;
+}
+.btn-main {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 500;
+  position: relative;
+  line-height: 100%;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-color: #00a3e1 !important;
+  color: #00a3e1;
+}
+
+.btn-main:after {
+  background-color: #00a3e1;
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+  transition: all 0.3s ease;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* Service section */
+
+.service-section {
+  font-size: 2rem;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: 70px;
+}
+
+.service-section .service1 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.subheading {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.subheading h3 {
+  border-color: #00a3e1 !important;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+}
+.subheading h3:before {
+  left: 0;
+}
+.subheading h3:after {
+  right: 0;
+}
+.subheading h3:before,
+.subheading h3:after {
+  position: absolute;
+  content: " ";
+  width: 2px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+}
+
+.service {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 1;
+  max-width: 25%;
+}
+
+.service-item {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.service p {
+  font-size: 1.5rem;
+}
+
+.service-item .icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  line-height: 1em;
+}
+
+.service-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.service-item p {
+  font-size: 14.5px;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <section id="about"><div class="about-section">
+        <div class="page-heading">
+          <h2>About Me.
+          <span class="icon"><i class="fa fa-fw fa-user"></i></span></h2>
+      </div>
+      <div class="about-info">
+        
+        <div>
+          <h3 class="profession">Web Developer</h3>
+          <p> Software engineer with ability to learn and collaborate in rapidly changing environments and compositions. Learning JavaScript, Node.js and Java. Eager to tackle web development/design challenges to achieve lasting impacts on user experience.</p>
+          <div class="sign">
+            <img src="/Portfolio/port/images/New Sign.jpg" alt="sign">
+          </div>
+        </div>
+          
+          <div><h3>Personal Information</h3>
+            <ul>
+              <li><span class="title">Name</span><span class="value">Himanshu Chaudhary</span></li>
+              <li><span class="title">Age</span><span class="value">20 Years</span></li>
+              <li><span class="title">Residence</span><span class="value">Bulandshahr, India</span></li>
+              <li><span class="title">Address</span><span class="value">123 Lorem Ipsum</span></li>
+              <li><span class="title">Email</span><span class="value">himanshuchaudhary1303@gmail.com</span></li>
+              <li><span class="title">Phone</span><span class="value">+919634278357</span></li>
+              <li><span class="title">Freelance</span><span class="value">Available</span></li>
+          </ul>
+          <div class="resume-button">
+            <a class="btn-main" href="/Portfolio/port/resume/Himanshu_Chaudhary_BCA_3yr-1.pdf" download><i class="fa fa-download"></i>Download Resume</a>
+        </div>
+          </div>
+         <!-- Services row -->
+         </div> 
+         <div class="service-section">
+          <div class="service1">
+            <div class="subheading">
+              <h3>Services</h3>
+  
+            </div>
+          </div>
+          
+          <div class="service">
+            <div class="service-item">
+          <div class="icon"> <i class="fa fa-laptop"></i></div>
+           <h4 class="service-heading">
+             Web development
+           </h4>
+           <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+          </div>
+        </div>
+          <div class="service">
+            <div class="service-item">
+            <div class="icon">
+           <i class="fa fa-eye"></i></div>
+           <h4 class="service-heading">Web Design</h4>
+           <p>Web designing is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience. Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content on a web page.</p>
+          </div>
+        </div>
+          <div class="service">
+            <div class="service-item">
+            <div class="icon">
+              <i class="fa-solid fa-display"></i>
+         </div>      
+             <h4 class="service-heading">Responsive Design</h4>
+           <p>Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly to various screen sizes. Designers size elements in relative units (%) and apply media queries, so their designs can automatically adapt to the browser space to ensure content consistency across devices.</p>
+          </div>
+        </div>
+          <div class="service">
+            <div class="service-item">
+            <div class="icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h4 class="service-heading">Programming</h4>
+            <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages, such as JavaScript, Java</p>
+          </div>
+          </div>
+          </div>
+        </section>
+     
+</body>
+</html>

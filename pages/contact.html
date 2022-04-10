@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1d5e5146a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {font-family: "Roboto", sans-serif;
+    line-height: 1.65;
+        line-height: 1.65;
+        color: #e1e1e1;
+        background: rgb(58, 56, 56);
+      }
+      .main-site {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        transform-style: preserve-3d;
+      }
+
+      .section-contact {
+        max-width: 1040px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .page-heading {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+        font-size: 2rem;
+        height: 72px;
+      }
+
+      .page-heading icon fa fa-fw fa-user {
+        color: #00a3e1;
+        position: relative;
+      }
+
+      .page-heading icon fa fa-fw fa-user::before {
+        content: "\e82a";
+      }
+
+      .page-heading h2 {font-size: -webkit-xxx-large;
+    font-weight: bold;
+        color: #00a3e1;
+      }
+
+      .page-heading h2 span {
+        float: right;
+      }
+
+      .contact-form {
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        
+      }
+
+      .col-lg-8 {
+        position: relative;
+        width: 67%;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .subheading {
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .subheading h3 {
+        display: inline-block;
+        color: #00a3e1;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1em;
+        letter-spacing: 0.5px;
+        position: relative;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+      }
+
+      .subheading h3::before {
+        left: 0;
+      }
+
+      .subheading h3::after {
+        right: 0;
+      }
+      .subheading h3::after,
+      .subheading h3::before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 5px;
+        background-color: #00a3e1;
+        bottom: 0;
+      }
+
+      .col-md-6,
+      .col-md-4 {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .mb-50 {
+        margin-bottom: 50px !important;
+      }
+
+      .input {
+        display: block;
+        position: relative;
+      }
+
+      .input__field {
+        width: 100%;
+        border: 2px solid #999;
+        padding: 5px 10px;
+        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        color: #ffffff;
+      }
+
+      .input__label {
+        font-weight: 500;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+
+        transition: all 0.2s ease;
+        z-index: 0;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-info .icon {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        line-height: 1em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .contact-info{margin: 0 auto;
+    width: 125%;}
+
+      .btn-main {
+    border-color: #00A3E1 !important;
+    color: #00A3E1;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: all .3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    line-height: 100%;
+    letter-spacing: 1px;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.btn-main:after {    background-color: #00A3E1;
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 35%;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: -1;
+}
+.info-item .icon {
+    color: #00A3E1;
+}
+
+a{    background-color: transparent;
+color:inherit;}
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+margin-bottom: 70px;}
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+      form {
+        display: block;
+        margin-top: 0em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-site">
+      <section class="section-contact" id="contact">
+        <div class="page-heading">
+          <h2>
+            Contact Me
+            <span class="icon">
+              <i class="fa fa-fw fa-user"></i>
+            </span>
+          </h2>
+        </div>
+
+        <div class="contact-form">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="subheading">
+              <h3>Let's Talk</h3>
+            </div>
+
+            <!--Form Start-->
+            <form id="contact-form" method="post" action="mail.php">
+              <div class="row">
+                <!--Name Field-->
+                <div class="col-md-6 mb-50">
+                  <span class="input">
+                    <input
+                      class="input__field cf-validate"
+                      type="text"
+                      id="cf-name"
+                      name="name"
+                    />
+                    <label class="input__label" for="cf-name">Name</label>
+                  </span>
+                </div>
+
+                <!--Email Field-->
+                <div class="col-md-6 mb-50">
+                  <span class="input">
+                    <input
+                      class="input__field cf-validate"
+                      type="text"
+                      id="cf-email"
+                      name="email"
+                    />
+                    <label class="input__label" for="cf-email">Email</label>
+                  </span>
+                </div>
+
+                <!--Message Box-->
+                <div class="col-md-12 mb-30">
+                  <span class="input">
+                    <textarea
+                      class="input__field cf-validate"
+                      id="cf-message"
+                      name="message"
+                      rows="5"
+                    ></textarea>
+                    <label class="input__label" for="cf-message"
+                      >How can we help you?</label
+                    >
+                  </span>
+                </div>
+
+                <div class="alert-container col-md-12"></div>
+
+                <!--Submit Button-->
+                <div class="col-md-12 text-center">
+                  <button id="cf-submit" class="btn-main">Send Message</button>
+                </div>
+              </div>
+            </form>
+            <!--Form End-->
+          </div>
+        </div>
+        <div class="row contact-info mb-70">
+          <!--Contact Info Item-->
+          <div class="col-md-4 info-item">
+            <span class="icon"><i class="fas fa-paper-plane"></i></span>
+            <h5>
+              <a href="mailto:himanshuchaudhary1303@gmail.com"
+                >himanshuchaudhary1303@gmail.com</a
+              >
+            </h5>
+          </div>
+
+          <!--Contact Info Item-->
+          <div class="col-md-4 info-item">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <h5>Bulandshahr, India</h5>
+          </div>
+
+          <!--Contact Info Item-->
+          <div class="col-md-4 info-item">
+            <span class="icon"><i class="fas fa-phone"></i></span>
+            <h5>(+91)9634278357</h5>
+          </div>
+        </div>
+        <div class="googlemap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224633.40676473494!2d77.73751412713928!3d28.392179364285077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca6d94f999667%3A0xfe0c6fc227a677c!2sBulandshahr%2C%20Uttar%20Pradesh%20203001!5e0!3m2!1sen!2sin!4v1649575737826!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

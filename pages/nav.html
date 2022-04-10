@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1d5e5146a9.js" crossorigin="anonymous"></script>
+    <style>
+
+      *{font-family: "Roboto", sans-serif;
+    line-height: 1.65;}
+        /* Header section */
+
+header {
+  background: black;
+  width: 18vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Profile Picture */
+
+.profile {
+  position: relative;
+  width: 18vh;
+}
+
+/* Name */
+.name {
+  font-size: 1.65rem;
+  margin-top: -7px;
+  color: rgb(160, 212, 224);
+  font-weight: bold;
+  background: rgb(202, 86, 86);
+}
+.name::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Navigation section */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 18vh;
+  cursor: pointer;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.navlist {
+  display: block;
+  line-height: 45px;
+  padding-left: 24px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px rgb(51, 47, 47) solid;
+  text-decoration: none;
+  color: #777;
+}
+
+.footer-contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.social {
+    text-align: center;
+padding-left: 4px;
+  margin-bottom: 10px;
+}
+.social li {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.social li a {
+  color: #777;
+  transition: color 0.2s ease;
+}
+
+.social li a:hover {
+  background-color: transparent;
+}
+
+.fa-brands fa-linkedin-square:before {
+  content: "f082";
+  box-sizing: border-box;
+}
+.fa-brands fa-linkedin-square::before {
+  content: "f08c";
+}
+
+.fa-brands {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.copy {
+  color: #777;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  margin: auto 0;
+  width: 17vh;
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        <img class="profile" src="/Portfolio/port/image/IMG_3668-01.png" alt="Profile Pcture">
+        <h3 class="name">Himanshu</h3>
+      <nav class="navbar">
+        <a class="navlist" href="/Portfolio/port/pages/home.html" target="iframe2"><span><i class="fa fa-fw fa-home"></span></i>Home</a>
+        <a class="navlist" href="/Portfolio/port/pages/about.html" target="iframe2"><span><i class="fa fa-fw fa-user"></span></i>About Me</a>
+          <a class="navlist" href="/Portfolio/port/pages/resume.html" target="iframe2"><span><i class="fa fa-fw fa-drivers-license"></i></span>Resume</a>
+        <a class="navlist" href="/Portfolio/port/pages/portfolio.html" target="iframe2"><span><i class="fa fa-fw fa-briefcase"></i></span>Portfolio</a>
+        <a class="navlist" href="/Portfolio/port/pages/contact.html" target="iframe2"><span><i class="fa fa-fw fa-envelope"></i></span>Contact</a>
+      </nav>
+      <div class="footer-contact">
+          <ul class="social">
+              <li><a href="https://www.facebook.com/himanshu.jaat.8357" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+              <li><a href="https://instagram.com/_himanshu_13_?utm_medium=copy_link" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/himanshu-chaudhary-8181091b6" target="_blank"><i class="fa-brands fa-linkedin-square"></i></a></li>
+              
+          </ul> <!--Copyright Text-->
+          <div class="copy">
+              <p>2022 © Himanshu .<br>All Right Reserved.</p>
+          </div>
+      </div>
+    </header>
+</body>
+</html>
