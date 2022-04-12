@@ -1,44 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himanshu -vCard/Resume/CV Template</title>
-    <link rel = "icon" href ="image/black-background-and-white-letter-h-grunge-vector-27974034.jpg" 
-        type = "image/x-icon">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        font-family: "Roboto", sans-serif;
-    line-height: 1.65;
-      }
-      .nav {
-        margin-left: 0px;
-        width: 18vh;
-        height: 100vh;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1d5e5146a9.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://kit.fontawesome.com/1d5e5146a9.js"
+    crossorigin="anonymous"
+  ></script>
 
-      .about {
-        position: absolute;
-        width: 93%;
-        margin-left: -8px;
-        height: 102.1%;
-      transition: all .4s ease-out;
-    animation: infinite;}
-    </style>
-  </head>
-  <body>
-    <iframe class="nav" src="pages/nav.html" frameborder="0"></iframe>
-    <iframe
-      class="about"
-      src="pages/home.html"
-      frameborder="0"
-      name="iframe2"
-    >
-</iframe>
+  
+</head>
+<body onload="myFunction()">
 
-  </body>
+  <div id="loading" class="preloader" >
+    <div class="loader" >
+        <!--Your Name-->
+        <h4>Himanshu Chaudhary</h4>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+    <div class="main-site" id="main-site1">
+    <header>
+        
+        <img class="profile" src="/Portfolio/port/image/IMG_3668-01.png" alt="Profile Pcture">
+        <h3 class="name">Himanshu</h3>
+      <nav class="navbar" id="nav">
+        <a onclick="home()" class="navlist pt-link active" href="#home" ><span><i class="fa fa-fw fa-home"></span></i>Home</a>
+        <a onclick="about()" class="navlist pt-link" href="#about" ><span><i class="fa fa-fw fa-user"></span></i>About Me</a>
+          <a onclick="resume()" class="navlist pt-link" href="#resume" ><span><i class="fa fa-fw fa-drivers-license"></i></span>Resume</a>
+          <a onclick="portfolio()" class="navlist pt-link" href="#portfolio"><span><i class="fa fa-fw fa-briefcase"></i></span>Portfolio</a>
+          <a onclick="contact()" class="navlist pt-link" href="#contact" ><span><i class="fa fa-fw fa-envelope"></i></span>Contact</a>
+      </nav>
+      <div class="footer-contact">
+          <ul class="social">
+              <li><a href="https://www.facebook.com/himanshu.jaat.8357" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+              <li><a href="https://instagram.com/_himanshu_13_?utm_medium=copy_link" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/himanshu-chaudhary-8181091b6" target="_blank"><i class="fa-brands fa-linkedin-square"></i></a></li>
+              
+          </ul> <!--Copyright Text-->
+          <div class="copy">
+              <p>2022 © Himanshu .<br>All Right Reserved.</p>
+          </div>
+      </div>
+    </header>
+    <div class="main" id="main-site2">
+        <section id="home" class="home-main-site pt-page page-active">
+      <div class="pic">
+      <div class="banner">
+      <h1>Himanshu
+      <span>Chaudhary</span></h1>
+      <p class="cd-headline clip is-full-width">
+          <span >I am a </span>
+          <span class="cd-words-wrapper" style="width: 2px; overflow: hidden;">
+              <b class="is-hidden">Graphics Designer</b>
+              <b class="is-hidden">Freelancer</b>
+              <b class="is-hidden">Web Developer</b>
+              <b class="is-visible">UI/UX Designer</b>
+          </span>
+          </p>
+      </div>
+  </div>
+  
+  
+  </section>
+
+  <section id="about" class="about-main-site pt-page">
+    <div class="about-section">
+    <div class="page-heading">
+      <h2>About Me.
+      <span class="icon"><i class="fa fa-fw fa-user"></i></span></h2>
+  </div>
+  <div class="about-info">
+    
+    <div>
+      <h3 class="profession">Web Developer</h3>
+      <p> Software engineer with ability to learn and collaborate in rapidly changing environments and compositions. Learning JavaScript, Node.js and Java. Eager to tackle web development/design challenges to achieve lasting impacts on user experience.</p>
+      <div class="sign">
+        <img src="/Portfolio/port/image/New Sign.jpg" alt="sign">
+      </div>
+    </div>
+      
+      <div><h3>Personal Information</h3>
+        <ul>
+          <li><span class="title">Name</span><span class="value">Himanshu Chaudhary</span></li>
+          <li><span class="title">Age</span><span class="value">20 Years</span></li>
+          <li><span class="title">Residence</span><span class="value">Bulandshahr, India</span></li>
+          <li><span class="title">Address</span><span class="value">123 Lorem Ipsum</span></li>
+          <li><span class="title">Email</span><span class="value">himanshuchaudhary1303@gmail.com</span></li>
+          <li><span class="title">Phone</span><span class="value">+919634278357</span></li>
+          <li><span class="title">Freelance</span><span class="value">Available</span></li>
+      </ul>
+      <div class="resume-button">
+        <a class="btn-main" href="/Portfolio/port/resume/Himanshu_Chaudhary_BCA_3yr-1.pdf" download><i class="fa fa-download"></i>Download Resume</a>
+    </div>
+      </div>
+     <!-- Services row -->
+     </div> 
+     <div class="service-section">
+      <div class="service1">
+        <div class="subheading">
+          <h3>Services</h3>
+
+        </div>
+      </div>
+      
+      <div class="service">
+        <div class="service-item">
+      <div class="icon"> <i class="fa fa-laptop"></i></div>
+       <h4 class="service-heading">
+         Web development
+       </h4>
+       <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+      </div>
+    </div>
+      <div class="service">
+        <div class="service-item">
+        <div class="icon">
+       <i class="fa fa-eye"></i></div>
+       <h4 class="service-heading">Web Design</h4>
+       <p>Web designing is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience. Appearance and design are incorporated as vital elements whether you're designing a website, mobile app or maintaining content on a web page.</p>
+      </div>
+    </div>
+      <div class="service">
+        <div class="service-item">
+        <div class="icon">
+          <i class="fa-solid fa-display"></i>
+     </div>      
+         <h4 class="service-heading">Responsive Design</h4>
+       <p>Responsive design is a graphic user interface (GUI) design approach used to create content that adjusts smoothly to various screen sizes. Designers size elements in relative units (%) and apply media queries, so their designs can automatically adapt to the browser space to ensure content consistency across devices.</p>
+      </div>
+    </div>
+      <div class="service">
+        <div class="service-item">
+        <div class="icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h4 class="service-heading">Programming</h4>
+        <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. Programming can be done using a variety of computer programming languages, such as JavaScript, Java</p>
+      </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="resume"  class="main-resume pt-page">
+        <div class="resume-main-site" >
+          <div class="main-section">
+            <div class="page-heading">
+              <h2>
+                Resume
+                <span class="icon"><i class="fa fa-fw fa-envelope"></i></span>
+              </h2>
+            </div>
+            <div class="row">
+              <!-- Education section Start -->
+  
+              <div class="education-section">
+                <div class="subheading">
+                  <h3>Education</h3>
+                </div>
+                <ul class="education">
+                  <li>
+                    <span class="line-left"></span>
+                    <div class="content">
+                      <h4>BCA - Bachelor of Computer Application</h4>
+                      <h5>IP College Campus-2, Bulandshahr</h5>
+                      <p class="info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias, voluptatem.
+                      </p>
+                    </div>
+                    <span class="year">
+                      <span class="to">2022</span>
+                      <span class="from">2019</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="line-left"></span>
+                    <div class="content">
+                      <h4>Intermediate</h4>
+                      <h5>
+                        Khalsa Montessori Senior Secondary School, Bulandshahr
+                      </h5>
+                      <p class="info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A, in!
+                      </p>
+                    </div>
+                    <span class="year">
+                      <span class="to">2019</span>
+                      <span class="from">2017</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="line-left"></span>
+                    <div class="content">
+                      <h4>High School</h4>
+                      <h5>Saint Momina School, Bulandshahr</h5>
+                      <p class="info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Pariatur, labore.
+                      </p>
+                    </div>
+                    <span class="year">
+                      <span class="to">2017</span>
+                      <span class="from">2007</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Education Section end -->
+            </div>
+            <div class="row2">
+              <!-- Skill Section Start-->
+              <div class="skill-section">
+                <div class="subheading">
+                  <h3>Coding Skill</h3>
+                </div>
+                <div class="skill-item">
+                  <h4 class="progress-title">Html</h4>
+                  <div class="progress1">
+                    <div class="progress-bars html" data-progress-value="91">
+                      <div class="progress-value">91%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h4 class="progress-title">CSS</h4>
+                  <div class="progress1">
+                    <div class="progress-bars css" data-progress-value="82">
+                      <div class="progress-value">82%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h4 class="progress-title">JavaScript</h4>
+                  <div class="progress1">
+                    <div class="progress-bars js" data-progress-value="94">
+                      <div class="progress-value">94%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h4 class="progress-title">Core Java</h4>
+                  <div class="progress1">
+                    <div class="progress-bars java" data-progress-value="82">
+                      <div class="progress-value">82%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <h4 class="progress-title">MS-Office</h4>
+                  <div class="progress1">
+                    <div class="progress-bars ms" data-progress-value="82">
+                      <div class="progress-value">82%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Skill section ends -->
+              <!-- Interest Section Start -->
+              <div class="interest-section">
+                <div class="subheading">
+                  <h3>Interests</h3>
+                </div>
+               <div class="interest"> 
+                   <div class="interest-item">
+                  <h4>Trading Stocks</h4>
+                </div>
+                <div class="interest-item">
+                  <h4>Travelling</h4>
+                </div>
+                <div class="interest-item">
+                  <h4>Gaming</h4>
+                </div>
+                <div class="interest-item">
+                  <h4>Photography</h4>
+                </div>
+              </div>
+          </div>
+          <!-- Interests section ends -->
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="contact-main-site pt-page" id="contact">
+        <div class="section-contact" >
+          <div class="page-heading">
+            <h2>
+              Contact Me
+              <span class="icon">
+                <i class="fa fa-fw fa-user"></i>
+              </span>
+            </h2>
+          </div>
+  
+          <div class="contact-form">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="subheading">
+                <h3>Let's Talk</h3>
+              </div>
+  
+              <!--Form Start-->
+              <form id="contact-form" method="post" action="mail.php">
+                <div class="row">
+                  <!--Name Field-->
+                  <div class="col-md-6 mb-50">
+                    <span class="input">
+                      <input
+                        class="input__field cf-validate"
+                        type="text"
+                        id="cf-name"
+                        name="name"
+                      />
+                      <label class="input__label" for="cf-name">Name</label>
+                    </span>
+                  </div>
+  
+                  <!--Email Field-->
+                  <div class="col-md-6 mb-50">
+                    <span class="input">
+                      <input
+                        class="input__field cf-validate"
+                        type="text"
+                        id="cf-email"
+                        name="email"
+                      />
+                      <label class="input__label" for="cf-email">Email</label>
+                    </span>
+                  </div>
+  
+                  <!--Message Box-->
+                  <div class="col-md-12 mb-30">
+                    <span class="input">
+                      <textarea
+                        class="input__field cf-validate"
+                        id="cf-message"
+                        name="message"
+                        rows="5"
+                      ></textarea>
+                      <label class="input__label" for="cf-message"
+                        >How can we help you?</label
+                      >
+                    </span>
+                  </div>
+  
+                  <div class="alert-container col-md-12"></div>
+  
+                  <!--Submit Button-->
+                  <div class="col-md-12 text-center">
+                    <button id="cf-submit" class="btn-main">Send Message</button>
+                  </div>
+                </div>
+              </form>
+              <!--Form End-->
+            </div>
+          </div>
+          <div class="row contact-info mb-70">
+            <!--Contact Info Item-->
+            <div class="col-md-4 info-item">
+              <span class="icon"><i class="fas fa-paper-plane"></i></span>
+              <h5>
+                <a href="mailto:himanshuchaudhary1303@gmail.com"
+                  >himanshuchaudhary1303@gmail.com</a
+                >
+              </h5>
+            </div>
+  
+            <!--Contact Info Item-->
+            <div class="col-md-4 info-item">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <h5>Bulandshahr, India</h5>
+            </div>
+  
+            <!--Contact Info Item-->
+            <div class="col-md-4 info-item">
+              <span class="icon"><i class="fas fa-phone"></i></span>
+              <h5>(+91)9634278357</h5>
+            </div>
+          </div>
+          <div class="googlemap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224633.40676473494!2d77.73751412713928!3d28.392179364285077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca6d94f999667%3A0xfe0c6fc227a677c!2sBulandshahr%2C%20Uttar%20Pradesh%20203001!5e0!3m2!1sen!2sin!4v1649575737826!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+  </div>
+  
+</div>
+<script src="main.js">
+</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+</body>
 </html>
