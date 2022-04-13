@@ -92,6 +92,18 @@ function contact() {
   document.getElementById("resume").classList.remove("page-active");
   }
 
+  function function1() {
+    var x = document.getElementsByClassName('header');
+    Array.from(x).forEach((x) => {
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        setTimeout(1000);
+      } else {
+        x.style.display = "none";
+      }
+    })
+  }
+
 // if( $('.navbar').length ) {
 //     var $elements = $(".navbar"),
 //         $filters = $('.navbar ');

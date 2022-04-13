@@ -111,7 +111,53 @@ body {
 
 /* Header section */
 
-header {
+header .header-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #17181b;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header .header-mobile .header-toggle {
+  font-size: 20px;
+  line-height: 50px;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+  border-left: 1px solid #3b3c43;
+  float: right;
+}
+
+header .header-mobile .header-toggle i {
+  color: #fff;
+}
+
+header .header-mobile h2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 50px;
+  white-space: nowrap;
+}
+@media only screen and (min-width: 1001px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
+.header {
   background: black;
   width: 18vh;
   height: 100vh;
@@ -227,14 +273,13 @@ header {
 
 /* home Section */
 .main {
-  left: 348px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .pic {
-  background: url(../image/nature-3082832__480.jpg) no-repeat
+  background: url(/Portfolio/port/image/nature-3082832__480.jpg) no-repeat
     center/cover;
   width: 100%;
   height: 100%;
@@ -252,18 +297,16 @@ pic::before {
 .home-main-site {
   position: fixed;
   top: 0;
-  left: 174px;
-  right: 0;
   width: 100%;
   height: 100%;
-  perspective: 1200px;
-  overflow: auto;
-  visibility: hidden;
+  overflow: hidden;
+  display:none;
   opacity: 1;
   z-index: 1;
 }
 .page-active {
   visibility: visible !important;
+  display: block !important;
   opacity: 1;
   z-index: 1;
 }
@@ -312,11 +355,12 @@ pic::before {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  margin-left: 174px;
-  margin-top: -8px;
+  position: absolute;
 }
 
-.about-main-site{visibility: hidden;}
+.about-main-site {
+  display:none;
+}
 .about-section {
   padding: 17%;
   position: relative;
@@ -328,7 +372,7 @@ pic::before {
   padding-bottom: 33px;
 }
 
-.page-heading {
+.about-section .page-heading {
   margin-bottom: 50px;
   margin-top: 50px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
@@ -517,7 +561,6 @@ ul {
 .service-item p {
   font-size: 14.5px;
   line-height: 22px;
-  margin-bottom: 0;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -530,9 +573,7 @@ ul {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: -8px;
-  visibility: hidden;
-  left: 174px;
+  display:none;
   top: 0;
 }
 
@@ -545,13 +586,15 @@ ul {
   color: #e1e1e1;
   background: rgb(58, 56, 56);
 }
-.page-heading {
+
+.main-resume .resume-main-site .main-section .page-heading {
   margin-bottom: 50px;
   margin-top: 50px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
 }
-.page-heading h2 {
+
+.resume-main-site .main-secton .page-heading h2 {
   color: #00a3e1;
   font-size: -webkit-xxx-large;
   font-weight: bold;
@@ -861,7 +904,7 @@ ul.education li:not(:first-child) {
 }
 .row2 {
   flex-wrap: unset;
-
+  margin-bottom: 10em;
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
@@ -881,7 +924,7 @@ ul.education li:not(:first-child) {
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
   transform-style: preserve-3d;
-  visibility: hidden;
+  display:none;
 }
 
 .section-contact {
@@ -890,7 +933,7 @@ ul.education li:not(:first-child) {
   margin-left: 15%;
 }
 
-.page-heading {
+.section-contact .page-heading {
   margin-bottom: 50px;
   margin-top: 50px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
@@ -907,13 +950,13 @@ ul.education li:not(:first-child) {
   content: "\e82a";
 }
 
-.page-heading h2 {
+.section-contact .page-heading h2 {
   font-size: -webkit-xxx-large;
   font-weight: bold;
   color: #00a3e1;
 }
 
-.page-heading h2 span {
+.section-contact .page-heading h2 span {
   float: right;
 }
 
@@ -1042,7 +1085,7 @@ label {
 }
 
 .contact-info {
-  margin: 0 auto;
+  margin: 0 4em;
   width: 109%;
 }
 

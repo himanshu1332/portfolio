@@ -1,0 +1,234 @@
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.65;
+  }
+
+/* Navigation section */
+
+.header-mobile{display: block;
+    transition: all .3s ease-in-out;
+}
+
+.header{display: none;
+    width: 30%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 10;
+}
+
+.profile{width: 100%;
+}
+
+.name {
+    font-size: 1.2em;
+    margin-top: 0px;
+    color: rgb(160, 212, 224);
+    font-weight: bold;
+    background: 0;
+    padding-left: 2px;
+}
+
+ .navbar{width: 100%;
+
+}
+
+.navlist{line-height: 40px;
+    padding-left: 10px;
+font-size: 13px;}
+
+
+.copy{    font-size: 9px;}
+/*
+
+.footer-contact{display: none;} */
+
+/* MAin site */
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 2em;
+    left: -11em;
+}
+
+/* Home section */
+
+
+.home-main-site {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+    overflow: auto;
+    
+    opacity: 1;
+    z-index: 1;
+}
+
+.banner h1{
+font-size: 3em;
+}
+
+/* Resume section */
+
+.main-resume {
+    position: absolute;
+    background: rgb(58, 56, 56);
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    left: 174px;
+    top: 0;
+    height: 263vh;
+}
+
+.main-section .row{
+    margin-left: 0;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+}
+
+.row2{flex-direction: column;}
+
+.education .content{
+    margin-left: 0;
+}
+
+.education .info {
+    font-size: 15px;
+}
+
+/* About section */
+
+#about {
+    background: rgb(58, 56, 56);
+    width: 101%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: 174px;
+    margin-top: -8px;
+}
+
+.about-section {
+    padding: 9%;
+    position: relative;
+    top: 0;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 33px;
+}
+
+.about-info {
+    display: flex;
+    font-size: 1rem;
+    color: whitesmoke;
+    flex-direction: column;
+}
+
+.profession {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about-info p, ul {
+    font-size: 1em;
+}
+
+.about-info ul li .email{    font-size: .95em;}
+
+.about-info .sign {
+    width: 50%;
+}
+
+.personal-info{
+    text-align: center;
+    margin-top: -5em;
+    margin-bottom: revert;
+}
+
+.about-info .resume-button {
+    margin-top: 30px;
+    margin-left: 3em;
+}
+
+.service-section {
+    font-size: 2rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.service {
+    position: relative;
+    max-width: 100%;
+    flex: 1;
+    padding: 0;
+}
+
+
+
+
+/* Contact Section */
+
+.contact-main-site{   
+    top: 2em ;
+    left: 0 ;
+}
+
+.section-contact{margin: 0 auto !important;}
+
+.contact-form{display: block;}
+.contact-form .row{margin-left:0;}
+
+.mb-50{
+    margin-bottom: 50px !important;
+}
+
+.input__label{left: 9px;
+font-size: .8em;}
+
+.email-contact{font-size: .8em;}
+
+.contact-info{margin: 0;}
+
+.col-md-4 {    position: relative;
+    width: 100%;    flex: 1;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.googlemap{margin-bottom: 6em;}
+
+/* Utility section */
+.page-heading {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    font-size: 2rem !important;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.page-heading h2, .section-contact .page-heading h2 {
+    font-size: inherit;
+    font-weight: bold;
+    color: #00a3e1;
+}
+
+.btn-main:after{position: inherit;}
