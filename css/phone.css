@@ -183,7 +183,35 @@ font-size: 3em;
     padding: 0;
 }
 
+/* portfolio section */
 
+.port-item {
+    grid-template-areas:
+        "first first first first "
+        "second second second second "
+        "fourth fourth fourth fourth"
+        "third third third third";
+}
+
+#portfolio{
+    width: 147%;
+}
+
+.section-port{
+    padding: 24%;
+    padding-top: 0;
+    left: 75px;
+}
+
+.screenshot img{
+    width: 105%;
+}
+
+.port-item .screenshot button{
+    margin-left: 74%;
+    height: 35px;
+    width: 50px;
+}
 
 
 /* Contact Section */
