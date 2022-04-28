@@ -195,6 +195,7 @@ font-size: 3em;
 
 #portfolio{
     width: 147%;
+    left: 26px;
 }
 
 .section-port{
@@ -212,7 +213,6 @@ font-size: 3em;
     height: 35px;
     width: 50px;
 }
-
 
 /* Contact Section */
 
@@ -253,13 +253,12 @@ font-size: .8em;}
     margin-top: 50px;
 }
 
-.page-heading h2, .section-contact .page-heading h2 {
+.page-heading h2, .section-contact .page-heading h2 , .section-port .page-heading h2 {
     font-size: inherit;
     font-weight: bold;
     color: #00a3e1;
 }
 
 .btn-main:after{position: inherit;}
-
 
 .text{font-size:2rem;}
